@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" class="bg-background h-full bg-auto bg-no-repeat">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Che's Website</title>
+</head>
+
+<body class="m-6 mb-10 flex min-h-screen flex-col font-oSans text-4xl">
+  <header class="sticky top-0 bg-white">
+    <div class="flex flex-row items-center justify-between">
+      <div class="text-4xl font-bold">
+        <a href="/" class="hover:text-accent">Che</a><span class="font-extralight">.</span>
+      </div>
+      <div class="right-4 space-x-8 text-2xl">
+        <a href="/" class="hover:text-accent nav-link">Home</a>
+        <a href="/projects" class="hover:text-accent nav-link">Projects</a>
+        <a href="/about_me" class="hover:text-accent nav-link">About Me</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="h-40"></div>
+
+  <div id="root"></div>
+
+  <!-- <footer className="mt-10">This is a footer</footer> -->
+</body>
+
+<script type="module" src="/src/frontend/main.jsx"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+  document.addEventListener("DOMContentLoaded", () => {
+    let cur_page = window.location.href;
+    let links = document.querySelectorAll(".nav-link");
+    let underline_attributes = [
+      "underline",
+      "underline-offset-8",
+      "decoration-slate-300",
+    ];
+
+    links.forEach((link) => {
+      if (link.href === cur_page) {
+        link.classList.add(...underline_attributes);
+      }
+    });
+  });
+</script>
+
+</html>
