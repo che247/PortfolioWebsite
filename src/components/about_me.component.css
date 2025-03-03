@@ -15,6 +15,7 @@
   gap: 2rem;
   margin-top: 8rem;
   margin-bottom: 4rem;
+  transition: all 0.8s ease;
 }
 
 .profile_picture {
@@ -38,7 +39,7 @@
 }
 
 .activity {
-  flex: 1 1 calc(30vw - 2rem);
+  flex: 1 1;
   /* Responsive base width for each activity with gap consideration */
   box-sizing: border-box;
   /* Required for padding and border to be included in the width */
@@ -48,4 +49,15 @@
 
 .activity img {
   max-width: 28vw;
+}
+
+/*Let's change the flex to columns if we run out of space on a smaller screen*/
+@media screen and (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .activities {
+    flex-direction: column;
+  }
 }

@@ -1,6 +1,8 @@
+import useDocTitle from "../hooks/useDocTitle";
 import "./home.component.css";
 
 const Home = () => {
+  useDocTitle("Che's Website - Home")
   return (
     <main className="main">
       {/*<!-- BIG NAME -->*/}

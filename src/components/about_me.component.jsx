@@ -1,7 +1,9 @@
 import "./about_me.component.css";
 import Activity from "./activity.component";
+import useDocTitle from "../hooks/useDocTitle";
 
 const AboutMe = () => {
+  useDocTitle("Che's Website - About Me")
   const activities = [
     {
       img: "/images/volleyball.JPEG",
