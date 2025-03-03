@@ -1,6 +1,6 @@
 const Activity = (props) => {
   return (
-    <div className="activity" data-aos="fade">
+    <div className="activity" data-aos="fade-up">
       <img
         src={props.img}
         alt={props.activity}
