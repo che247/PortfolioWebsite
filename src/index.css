@@ -16,8 +16,8 @@
   --main_color: #cbcfd2;
   --auxilary_color: #8b929a;
   --accent_color: #767b8d;
-  display: flex;
-  align-items: flex-start;
+  /* display: flex; */
+  /* align-items: flex-start; */
 }
 
 a {
@@ -32,7 +32,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
