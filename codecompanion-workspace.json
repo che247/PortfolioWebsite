@@ -1,0 +1,32 @@
+{
+  "name": "CodeCompanion.nvim",
+  "version": "1.0.0",
+  "workspace_spec": "1.0",
+  "description": "An example workspace file",
+  "system_prompt": "You are assisting with a React-based portfolio application. The project includes components for showcasing skills, projects, and contact information. Follow best practices for React development, including functional components, hooks, and modern state management. Ensure code is clean, modular, and well-documented. Provide guidance on UI/UX improvements, performance optimizations, and accessibility considerations.",
+  "groups": [
+    {
+      "name": "Frontend",
+      "system_prompt": "Focus on React-specific queries, such as component structure, state management, and integration with APIs or libraries. Provide concise, actionable advice and code snippets when applicable.",
+      "opts": {
+        "remove_config_system_prompt": true
+      },
+      "files": [
+        {
+          "description": "Main app.jsx file",
+          "path": "src/App.jsx"
+        },
+        {
+          "description": "Main app.css file styling the app.js file",
+          "path": "src/App.css"
+        }
+      ],
+      "symbols": [
+        {
+          "description": "...",
+          "path": "..."
+        }
+      ]
+    }
+  ]
+}

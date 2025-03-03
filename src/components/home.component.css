@@ -1,0 +1,54 @@
+.main {
+  /* --background_color: #ececec; */
+  /* --main_color: #cbcfd2; */
+  /* --auxilary_color: #8b929a; */
+  /* --accent_color: #767b8d; */
+  color: var(--main_color);
+}
+
+.title {
+  padding-top: 1vh;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+
+.name {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.job_title {
+  color: var(--auxilary_color);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.current_prev_sections {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.current_prev_titles {
+  color: var(--auxilary_color);
+  font-size: 1.5rem;
+  justify-content: flex-start;
+}
+
+/* .current_positions { */
+/*   color: var(--auxilary_color); */
+/* } */
+
+.previous {
+  text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}

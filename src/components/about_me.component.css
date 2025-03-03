@@ -1,0 +1,37 @@
+.main {
+  /* --background_color: #ececec; */
+  /* --main_color: #cbcfd2; */
+  /* --auxilary_color: #8b929a; */
+  /* --accent_color: #767b8d; */
+  color: var(--main_color);
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.profile_picture {
+  width: 50vw;
+}
+
+.descriptors {
+  color: var(--auxilary_color);
+  margin-bottom: 2rem;
+}
+
+.activities {
+  display: flex;
+  max-width: 100%;
+  width: 90vw;
+  gap: 2rem;
+}
+
+.activity img {
+  max-width: 30vw;
+}
