@@ -60,4 +60,12 @@
   .activities {
     flex-direction: column;
   }
+
+  .activity img {
+    max-width: 100%;
+  }
+
+  .profile_picture {
+    width: 100%;
+  }
 }
