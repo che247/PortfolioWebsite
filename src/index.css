@@ -58,39 +58,3 @@ h1 {
   }
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  /* Ensures the header stays above other content */
-  background-color: var(--main_color);
-  /* Add a background color to avoid transparency issues */
-  padding: 1rem 0;
-  /* Adjust padding as needed */
-  width: 100vw;
-  height: 2rem;
-  display: flex;
-}
-
-.header__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-}
-
-a {
-  color: var(--auxilary_color);
-  font-size: 1.25rem;
-}
-
-.nav-link {
-  margin-right: 1rem;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent_color);
-  text-decoration: underline;
-}

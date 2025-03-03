@@ -31,18 +31,14 @@
     document.addEventListener("DOMContentLoaded", () => {
       let cur_page = window.location.href;
       let links = document.querySelectorAll(".nav-link");
-      let underline_attributes = [
-        "underline",
-        "underline-offset-8",
-        "decoration-slate-300",
-      ];
+      links = Array.from(links);
 
-      console.log(links);
       links.forEach((link) => {
         if (link.href === cur_page) {
-          link.classList.add(...underline_attributes);
+          console.log("Found a match!")
+          link.classList.add("current_page");
         }
-      });
+      })
     });
   </script>
   <script type="module" src="/src/main.jsx"></script>
