@@ -23,7 +23,7 @@ const AboutMe = () => {
   ];
   return (
     <>
-      <div className="intro" data-aos="fade">
+      <div className="intro" data-aos="fade" data-aos-duration="1500">
         <img
           src="/images/no_chain_profile.JPEG"
           alt="Che"
@@ -48,7 +48,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="descriptors">
+      <div className="descriptors" data-aos="fade" data-aos-duration="1500">
         <p>
           Outside of school, I love playing various sports including my
           favorite, volleyball. I love to explore the outdoors with
@@ -57,7 +57,7 @@ const AboutMe = () => {
           well.
         </p>
       </div>
-      <div className="activities">
+      <div className="activities" data-aos="fade-up" data-aos-duration="1000">
         {activities.map((activity, index) => (
           <Activity
             key={index}

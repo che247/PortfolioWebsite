@@ -2,7 +2,7 @@ import useDocTitle from "../hooks/useDocTitle";
 import "./home.component.css";
 
 const Home = () => {
-  useDocTitle("Che's Website - Home")
+  useDocTitle("Che's Website - Home");
   return (
     <main className="main">
       {/*<!-- BIG NAME -->*/}
@@ -48,7 +48,9 @@ const Home = () => {
           <span className="current_prev_titles">Prev</span>
           <ul>
             <li>
-              <span className="current_prev_positions">Student IT Technician</span>
+              <span className="current_prev_positions">
+                Student IT Technician
+              </span>
             </li>
           </ul>
         </div>
