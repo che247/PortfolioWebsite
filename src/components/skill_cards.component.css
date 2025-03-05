@@ -1,0 +1,24 @@
+.skill_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5vw;
+  font-size: 1rem;
+}
+
+.skill_card img {
+  max-width: 10vw;
+  width: 8vw;
+  height: auto;
+  object-fit: cover;
+  background-color: var(--auxilary_color);
+  border-radius: 100%;
+  filter: grayscale(40%);
+}
+
+@media only screen and (max-width: 600px){
+  .skill_card{
+    font-size: 0.75rem;
+  }
+}

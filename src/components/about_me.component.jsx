@@ -3,7 +3,7 @@ import Activity from "./activity.component";
 import useDocTitle from "../hooks/useDocTitle";
 
 const AboutMe = () => {
-  useDocTitle("Che's Website - About Me")
+  useDocTitle("Che's Website - About Me");
   const activities = [
     {
       img: "/images/volleyball.JPEG",
@@ -23,7 +23,7 @@ const AboutMe = () => {
   ];
   return (
     <>
-      <div className="intro" data-aos="fade" data-aos-duration="1500">
+      <div className="intro" data-aos="fade" data-aos-duration="1000">
         <img
           src="/images/no_chain_profile.JPEG"
           alt="Che"
@@ -48,7 +48,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="descriptors" data-aos="fade" data-aos-duration="1500">
+      <div className="descriptors" data-aos="fade" data-aos-duration="1000">
         <p>
           Outside of school, I love playing various sports including my
           favorite, volleyball. I love to explore the outdoors with

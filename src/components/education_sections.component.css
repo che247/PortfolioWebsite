@@ -1,0 +1,25 @@
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-level_education_info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.education_info{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.education img{
+  flex: 1 1;
+  min-width: 8vw;
+  max-width: 15vw;
+  height: 12vh;
+  border-radius: 20%;
+  filter: grayscale(50%) brightness(80%);
+}
