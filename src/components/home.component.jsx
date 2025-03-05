@@ -203,6 +203,48 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <div className="horizontal_gap"></div>
+
+      <div
+        className="resume_section"
+        data-aos="slide-up"
+        data-aos-duration="1000"
+      >
+        <span id="resume_title" className="section_title">
+          Check Out The Resume
+        </span>
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/16O3oYEay3OcLt_5Vr3qQQUOu-Atx8eAP/view?usp=share_link"
+        >
+          <img src="/images/icons8-file.svg" alt="Che's Resume" />
+        </a>
+      </div>
+
+      <div className="horizontal_gap"></div>
+
+      <div
+        className="connect_section"
+        data-aos="slide-up"
+        data-aos-duration="1000"
+      >
+        <span id="connecting_section" className="section_title">
+          Let's Connect!
+        </span>
+        <div className="social_links_container">
+          <a
+            target="_blank"
+            id="linked_in"
+            href="https://www.linkedin.com/in/chemeng-her/"
+          >
+            <img src="/images/icons8-linkedin.svg" alt="" />
+          </a>
+          <a target="_blank" id="github" href="https://github.com/che247">
+            <img src="/images/icons8-github.svg" alt="" />
+          </a>
+        </div>
+      </div>
     </main>
   );
 };
