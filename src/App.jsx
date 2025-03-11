@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/home.component";
 import AboutMe from "./components/about_me.component";
+import Projects from "./components/projects.component";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/projects" element={<ComingSoon />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
           <Route path="/about_me" element={<AboutMe />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </>
   );
@@ -43,7 +45,7 @@ const Header = () => {
     );
 
     if (active_link) {
-      active_link.classList.add("current_page")
+      active_link.classList.add("current_page");
     }
   }, [location.pathname]);
 
@@ -68,6 +70,30 @@ const Header = () => {
         </div>
       </div>
     </header>
+  );
+};
+
+const Footer = () => {
+  const location = useLocation();
+  console.log(location.pathname);
+  return (
+    <div
+      id="footer"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        marginTop: "5rem",
+        color: "var(--auxilary_color)",
+        bottom: "0",
+        position: "relative"
+      }}
+    >
+      <p>Che's Website. All rights reserved.</p>
+      {/*<p>Built using React and Vite.</p>*/}
+    </div>
   );
 };
 

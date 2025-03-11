@@ -84,3 +84,7 @@ a {
 a:hover {
   color: var(--accent_color);
 }
+
+#footer * {
+  margin: 0.5rem;
+}
