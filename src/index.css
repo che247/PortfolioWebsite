@@ -14,6 +14,7 @@
   /* We need to define some concret colors that we can always call from */
   --background_color: #ececec;
   --main_color: #cbcfd2;
+  --main_text_color: #afb3b6ff;
   --auxilary_color: #8b929a;
   --accent_color: #767b8d;
   /* display: flex; */

@@ -8,6 +8,7 @@
   border-radius: 8px;
   gap: 2rem;
   width: 80vw;
+  filter: drop-shadow(12px 10px 8px var(--auxilary_color));
 }
 
 .project_description {
