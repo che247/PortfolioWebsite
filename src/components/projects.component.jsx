@@ -59,7 +59,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center", flexDirection: "column"}}>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
       {projects.map((project, index) => (
         <div className="project_card" key={index}>
           <img src={project.url} alt={project.project_name} />
