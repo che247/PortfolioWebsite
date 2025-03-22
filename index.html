@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <title>Che's Website</title>
 </head>
 
@@ -25,13 +26,14 @@
 
       links.forEach((link) => {
         if (link.href === cur_page) {
-          console.log("Found a match!")
+          console.log("Found a match!");
           link.classList.add("current_page");
         }
-      })
+      });
     });
   </script>
   <script type="module" src="/src/main.jsx"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>

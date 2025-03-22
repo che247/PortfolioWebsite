@@ -6,9 +6,13 @@ import "./skill_cards.component.css";
 import WorkExperience from "./work_experiences.component";
 import EducationExperience from "./education_sections.component";
 import Skills from "./skill_cards.component";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const Home = () => {
   useDocTitle("Che's Website - Home");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const professional_experiences = [
     {
       title: "Software Engineer Intern",
@@ -87,6 +91,36 @@ const Home = () => {
       skill: "sklearn",
     },
   ];
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const templateParams = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    emailjs.init({
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    });
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your EmailJS service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Replace with your EmailJS template ID
+        templateParams,
+      )
+      .then(
+        (response) => {
+          setIsSubmitted(true);
+          alert("Email sent successfully!", response.status, response.text);
+        },
+        (error) => {
+          alert("Failed to send email.", error);
+        },
+      );
+  };
 
   return (
     <main className="main">
@@ -220,6 +254,31 @@ const Home = () => {
         >
           <img src="/images/icons8-file.svg" alt="Che's Resume" />
         </a>
+      </div>
+
+      <div className="horizontal_gap"></div>
+
+      <div className="contact_me_section">
+        <span className="contact_me_title">Contact Me</span>
+        {isSubmitted ? (
+          <div className="success_message">
+            <p>Thank you for contacting me! I'll get back to you shortly!</p>
+          </div>
+        ) : (
+          <form className="contact_me_form" onSubmit={sendEmail}>
+            <label htmlFor="name">Name: {"  "}</label>
+            <input type="text" name="name" placeholder="John Doe" />
+            <label htmlFor="user_email_address">Your Email Address{"  "}</label>
+            <input type="text" name="email" placeholder="john@email.com" />
+            <label htmlFor="message">Message{"  "}</label>
+            <textarea
+              className="msg_body"
+              id="message"
+              name="message"
+            ></textarea>
+            <input className="submit_btn" type="submit" />
+          </form>
+        )}
       </div>
 
       <div className="horizontal_gap"></div>

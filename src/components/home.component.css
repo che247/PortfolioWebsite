@@ -113,3 +113,54 @@ div.horizontal_gap {
   min-width: 20vw;
   max-width: 50vw;
 }
+
+.contact_me_section {
+  min-width: 40vw;
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main_color);
+  color: #878b8eff;
+  border-radius: 8px;
+  align-items: stretch;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact_me_section input,  textarea{
+  background-color: #a3a7aaff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #cdcdcdff;
+}
+
+.contact_me_title {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact_me_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_me_form label {
+  text-align: left;
+}
+
+.msg_body {
+  height: 10vh;
+}
+
+.submit_btn {
+  margin-top: 2rem;
+}
+
+.submit_btn:hover {
+  border-color: white;
+}
