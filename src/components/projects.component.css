@@ -12,7 +12,9 @@
 }
 
 .project_description {
+  flex: 1;
   text-align: left;
+  max-width: 50%;
 }
 
 .project_description a {
@@ -20,7 +22,10 @@
 }
 
 .project_card img {
-  flex: 0 1;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1400px) {
@@ -28,4 +33,3 @@
     flex-direction: column;
   }
 }
-
