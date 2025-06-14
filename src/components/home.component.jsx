@@ -147,7 +147,7 @@ const Home = () => {
         <ul>
           <li>
             <span className="current_prev_positions">
-              Software Engineer (Intern) at Seagate
+              Software Engineer at Seagate
             </span>
           </li>
           <li>
